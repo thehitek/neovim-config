@@ -1,6 +1,8 @@
 vim.opt.termguicolors = true
 
 vim.opt.wrap = true
+vim.opt.whichwrap:append("<,>,h,l")
+
 vim.opt.linebreak = true
 vim.opt.breakindent = true
 vim.opt.showbreak = "↳ "

@@ -10,20 +10,17 @@ return {
 			{
 				title = "Fugitive Git",
 				ft = "fugitive",
-				-- size = { width = 0.3 },
-				-- Опционально: автоматически открывать, если окно закрыто
 				pinned = true,
 				open = "Git",
 			},
 			{
-				title = "Trouble Symbols",
+				title = "Trouble",
 				ft = "trouble",
 				pinned = true,
-				open = "Trouble symbols toggle focus=false",
-				-- filter = function(buf)
-				-- 	return vim.b[buf].trouble and vim.b[buf].trouble.mode == "symbols"
-				-- end,
-				-- size = { width = 30 },
+				open = function()
+					vim.cmd("Trouble symbols focus=false win.position=right auto_preview=false")
+					vim.cmd("Trouble diagnostics focus=false win.position=right auto_preview=false")
+				end,
 			},
 		},
 	},
