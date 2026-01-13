@@ -26,8 +26,6 @@ return {
 				"SignColumn",
 				"CursorLine",
 				"CursorLineNr",
-				"StatusLine",
-				"StatusLineNC",
 				"EndOfBuffer",
 			},
 			extra_groups = {},
