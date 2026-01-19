@@ -16,3 +16,7 @@ vim.opt.shiftwidth = 4
 vim.opt.softtabstop = 4
 
 vim.g.autoformat = false
+
+vim.opt.spell = true
+vim.opt.spelllang = { "ru", "en" }
+

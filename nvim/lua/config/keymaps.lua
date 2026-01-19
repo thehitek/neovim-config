@@ -13,5 +13,8 @@ vim.keymap.set("n", "gs", "<cmd>ClangdSwitchSourceHeader<cr>", { desc = "Switch 
 vim.keymap.set({ "n", "v" }, "<S-Down>", "<C-d>", { desc = "Scroll down" })
 vim.keymap.set({ "n", "v" }, "<S-Up>", "<C-u>", { desc = "Scroll up" })
 
-vim.keymap.set("i", "<S-Down>", "<Esc><C-d>a", { desc = "Scroll down in insert mode" })
-vim.keymap.set("i", "<S-Up>", "<Esc><C-u>a", { desc = "Scroll up in insert mode" })
+vim.keymap.set("i", "<S-Down>", "<Esc><C-d>i", { desc = "Scroll down in insert mode" })
+vim.keymap.set("i", "<S-Up>", "<Esc><C-u>i", { desc = "Scroll up in insert mode" })
+vim.keymap.set("i", "<S-Right>", "<C-o>e", { desc = "Scroll right in insert mode" })
+vim.keymap.set("i", "<S-Left>", "<C-o>b", { desc = "Scroll left in insert mode" })
+
