@@ -18,3 +18,5 @@ vim.keymap.set("i", "<S-Up>", "<Esc><C-u>i", { desc = "Scroll up in insert mode"
 vim.keymap.set("i", "<S-Right>", "<C-o>e", { desc = "Scroll right in insert mode" })
 vim.keymap.set("i", "<S-Left>", "<C-o>b", { desc = "Scroll left in insert mode" })
 
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>")
+
