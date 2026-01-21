@@ -8,12 +8,6 @@ return {
 	opts = {
 		right = {
 			{
-				title = "Fugitive Git",
-				ft = "fugitive",
-				pinned = true,
-				open = "Git",
-			},
-			{
 				title = "Trouble",
 				ft = "trouble",
 				pinned = true,
