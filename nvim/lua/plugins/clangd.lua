@@ -4,7 +4,13 @@ return {
 		opts = {
 			servers = {
 				clangd = {
-					cmd = { "clangd" },
+					cmd = {
+						"clangd",
+						"-j", "4",
+						"--background-index",
+						"--clang-tidy",
+						"--function-arg-placeholders=true"
+					},
 				},
 			},
 		},
