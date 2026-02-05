@@ -12,8 +12,8 @@ return {
 				ft = "trouble",
 				pinned = true,
 				open = function()
-					vim.cmd("Trouble symbols focus=false win.position=right auto_preview=false")
-					vim.cmd("Trouble diagnostics focus=false win.position=right auto_preview=false")
+					require("trouble").open({ mode = "symbols", focus = false, win = { position = "right" }, auto_preview = false, auto_refresh = true })
+					require("trouble").open({ mode = "diagnostics", focus = false, win = { position = "right" }, auto_preview = false, auto_refresh = true })
 				end,
 			},
 		},
