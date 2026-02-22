@@ -8,8 +8,10 @@ return {
 						"clangd",
 						"-j", "4",
 						"--background-index",
+						"--function-arg-placeholders=true",
 						"--clang-tidy",
-						"--function-arg-placeholders=true"
+						"--clang-tidy-checks=bugprone-*,performance-*,readability-*,modernize-*,clang-analyzer-*",
+						"--fallback-style=Google",
 					},
 				},
 			},
