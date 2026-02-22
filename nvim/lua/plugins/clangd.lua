@@ -11,7 +11,7 @@ return {
 						"--function-arg-placeholders=true",
 						"--clang-tidy",
 						"--clang-tidy-checks=bugprone-*,performance-*,readability-*,modernize-*,clang-analyzer-*",
-						"--fallback-style=Google",
+						"--fallback-style=LLVM",
 					},
 				},
 			},
