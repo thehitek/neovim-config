@@ -12,6 +12,7 @@ return {
 						"--clang-tidy",
 						"--clang-tidy-checks=bugprone-*,performance-*,readability-*,modernize-*,clang-analyzer-*",
 						"--fallback-style=LLVM",
+						"--header-insertion=never",
 					},
 				},
 			},
