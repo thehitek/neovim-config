@@ -8,8 +8,6 @@ vim.keymap.set("x", "<leader>p", [["_dP]])
 vim.keymap.set("n", "q", "<Nop>")
 vim.keymap.set("n", "<leader>q", "q")
 
-vim.keymap.set("n", "gs", "<cmd>ClangdSwitchSourceHeader<cr>", { desc = "Switch Source/Header" })
-
 vim.keymap.set({ "n", "v" }, "<S-Down>", "<C-d>", { desc = "Scroll down" })
 vim.keymap.set({ "n", "v" }, "<S-Up>", "<C-u>", { desc = "Scroll up" })
 

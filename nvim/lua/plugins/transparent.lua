@@ -34,3 +34,4 @@ return {
 		require("transparent").clear_prefix("lualine_c")
 	end,
 }
+

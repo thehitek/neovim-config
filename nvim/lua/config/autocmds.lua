@@ -13,18 +13,9 @@ vim.api.nvim_create_autocmd("TermOpen", {
 })
 
 vim.api.nvim_create_autocmd("FileType", {
-	pattern = { "fugitive", "git", "gitcommit", "diff" },
+	pattern = { "diff" },
 	callback = function()
 		vim.b.lsp_disable = true
-	end,
-})
-
-vim.api.nvim_create_autocmd("TabEnter", {
-	callback = function()
-		vim.schedule(function()
-			vim.cmd("BufferLineCycleNext")
-			vim.cmd("BufferLineCyclePrev")
-		end)
 	end,
 })
 
