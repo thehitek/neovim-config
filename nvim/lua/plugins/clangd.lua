@@ -11,7 +11,6 @@ return {
 					"--function-arg-placeholders=1",
 					"--completion-style=detailed",
 					"--clang-tidy",
-					"--clang-tidy-checks=bugprone-*,performance-*,readability-*,modernize-*,clang-analyzer-*",
 					"--fallback-style=LLVM",
 					"--header-insertion=never",
 				},
