@@ -29,3 +29,12 @@ vim.api.nvim_create_autocmd("FileType", {
 		vim.opt_local.wrap = false
 	end,
 })
+
+vim.api.nvim_create_autocmd("LspAttach", {
+	callback = function(args)
+		local client = vim.lsp.get_client_by_id(args.data.client_id)
+		if client and client.name == "qmlls" then
+			client.server_capabilities.semanticTokensProvider = nil
+		end
+	end,
+})

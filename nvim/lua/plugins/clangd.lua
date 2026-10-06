@@ -10,8 +10,6 @@ return {
 					"--background-index",
 					"--function-arg-placeholders=1",
 					"--completion-style=detailed",
-					"--clang-tidy",
-					"--fallback-style=LLVM",
 					"--header-insertion=never",
 				},
 			},
